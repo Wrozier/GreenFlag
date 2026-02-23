@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">GreenFlag</string>
+    <string name="app_name">GreenFlag Clone</string>
+    <string name="welcome_title">GreenFlag</string>
+    <string name="tagline">No Matter What</string>
+    <string name="create_account">Create an account</string>
+    <string name="next">Next</string>
+    <!-- Add more as needed -->
 </resources>
