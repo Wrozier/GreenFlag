@@ -1,6 +1,7 @@
 package com.example.greenflag.ui.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -10,6 +11,7 @@ import com.example.greenflag.ui.screens.welcome.SuccessScreen
 import com.example.greenflag.ui.screens.welcome.WelcomeScreen
 import com.example.greenflag.ui.screens.welcome.register.RegisterScreen
 
+@Preview
 @Composable
 fun NavGraph(navController: NavHostController) {
     NavHost(
