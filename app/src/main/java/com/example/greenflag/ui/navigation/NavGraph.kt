@@ -14,11 +14,12 @@ import com.example.greenflag.ui.screens.welcome.register.RegisterScreen
 fun NavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = "welcome"
+        startDestination = "welcome" // ← first screen starts here
     ) {
         composable("welcome") {
             WelcomeScreen(
-                onCreateAccount = { navController.navigate("register") }
+                onCreateAccount = { navController.navigate("register") // this line triggers the navigation
+                }
             )
         }
         composable("register") {
@@ -42,7 +43,7 @@ fun NavGraph(navController: NavHostController) {
                 email = email,
                 onBack = { navController.popBackStack() },
                 onContinue = {
-                    // TODO: navigate to home/dashboard or login
+                    // navigate to home/dashboard or login
                     navController.navigate("home") {
                         popUpTo("welcome") { inclusive = true }
                     }

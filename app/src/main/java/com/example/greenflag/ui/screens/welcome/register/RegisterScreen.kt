@@ -21,6 +21,7 @@ fun RegisterScreen(
     onBack: () -> Unit,
     onNext: (String, String) -> Unit
 ) {
+    // Registration states
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var confirm by remember { mutableStateOf("") }
@@ -58,7 +59,7 @@ fun RegisterScreen(
             )
             Spacer(Modifier.weight(1f))
         }
-
+            // email field and button
         OutlinedTextField(
             value = email,
             onValueChange = { email = it.trim() },
@@ -74,7 +75,7 @@ fun RegisterScreen(
         )
 
         Spacer(Modifier.height(24.dp))
-
+                // password fields
         OutlinedTextField(
             value = password,
             onValueChange = { password = it },
@@ -90,7 +91,7 @@ fun RegisterScreen(
         )
 
         Spacer(Modifier.height(24.dp))
-
+            // insuring password is correct
         OutlinedTextField(
             value = confirm,
             onValueChange = { confirm = it },
@@ -115,7 +116,7 @@ fun RegisterScreen(
         )
 
         Spacer(Modifier.weight(1f))
-
+        // next button validator
         Button(
             onClick = { onNext(email, password) },
             enabled = formValid,

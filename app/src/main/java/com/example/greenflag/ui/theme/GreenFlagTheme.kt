@@ -19,7 +19,7 @@ private val DarkColorScheme = darkColorScheme(
 fun GreenFlagTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = DarkColorScheme,   // or use dynamic color if on Android 12+
-        typography = Typography,         // define or use default
+        typography = GreenFlagTypography,
         content = content
     )
 }

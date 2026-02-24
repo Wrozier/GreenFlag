@@ -52,7 +52,7 @@ fun GreenFlagTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = GreenFlagTypography,
         content = content
     )
 }
